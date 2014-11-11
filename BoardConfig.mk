@@ -50,6 +50,11 @@ else
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/hammerhead/bluetooth
 endif
 
+#TARGET_PREBUILT_KERNEL := device/lge/hammerhead/zImage-dtb
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
 # Wifi related defines
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
 BOARD_WLAN_DEVICE           := bcmdhd
